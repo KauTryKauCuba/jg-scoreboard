@@ -1,0 +1,16 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  padding: 84px 24px 24px; /* 60px header + 24px padding */
+  flex: 1;
+}

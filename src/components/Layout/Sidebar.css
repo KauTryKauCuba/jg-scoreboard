@@ -1,0 +1,144 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: var(--bg-sidebar);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  padding: 16px 12px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px 24px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1e293b;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 400;
+  transition: var(--transition);
+}
+
+.nav-item:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.nav-item.active {
+  background: var(--primary);
+  color: white;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.support-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  background: #f1f5f9;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.promo-card {
+  background: linear-gradient(135deg, #00c6fb 0%, #005bea 100%);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 91, 234, 0.2);
+}
+
+.promo-card::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.promo-price {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.promo-desc {
+  font-size: 11px;
+  opacity: 0.9;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.promo-btn {
+  background: white;
+  color: var(--primary);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.promo-dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: white;
+  width: 16px;
+  border-radius: 4px;
+}
