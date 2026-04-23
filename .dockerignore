@@ -1,8 +1,0 @@
-node_modules
-dist
-.git
-.DS_Store
-*.md
-Dockerfile
-docker-compose.yml
-nginx.conf
