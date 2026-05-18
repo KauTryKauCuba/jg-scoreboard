@@ -1,0 +1,9 @@
+services:
+  scoreboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jg-scoreboard
+    ports:
+      - "3004:80"
+    restart: always

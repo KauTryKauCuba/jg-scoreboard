@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { 
   LayoutDashboard, 
@@ -10,8 +9,7 @@ import {
   Users2, 
   FileText, 
   Search,
-  Headset,
-  ChevronRight
+  Headset
 } from 'lucide-react';
 import './Sidebar.css';
 

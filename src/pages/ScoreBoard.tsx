@@ -36,7 +36,7 @@ const ScoreBoard = () => {
     { name: "Michael Chen", role: "Product Manager", avatar: "https://i.pravatar.cc/150?u=michael", scores: [9, 7, 9] },
   ];
 
-  const calculateTotal = (scores: any) => {
+  const calculateTotal = (scores: { technical: number; communication: number; culture: number }) => {
     return ((scores.technical + scores.communication + scores.culture) / 15 * 100).toFixed(0);
   };
 
